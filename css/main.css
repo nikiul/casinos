@@ -86,11 +86,6 @@ main {
   height: 639px;
   padding-top: 37px;
 }
-@media (max-width: 1454px) {
-  .banner {
-    background-image: url('../img/banner-bg.png');
-  }
-}
 .banner__content {
   position: relative;
   display: -webkit-box;
