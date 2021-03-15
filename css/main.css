@@ -34,11 +34,12 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__title {
+.header__logo {
   margin: 0;
   font-weight: bold;
   font-size: 30px;
   line-height: 35px;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
 }
 .header__nav {
@@ -83,11 +84,12 @@ main {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 639px;
-  padding-top: 37px;
+  height: 530px;
+  margin-bottom: 146px;
 }
 .banner__content {
   position: relative;
+  bottom: -3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,8 +129,8 @@ main {
 .banner__title {
   margin: 0;
   font-family: 'Palatino Linotype';
-  font-size: 60px;
-  line-height: 81px;
+  font-size: 50px;
+  line-height: 67px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,8 +153,8 @@ main {
   margin-right: 10px;
   font-family: 'Palatino Linotype';
   font-weight: bold;
-  font-size: 90px;
-  line-height: 121px;
+  font-size: 70px;
+  line-height: 94px;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -163,10 +165,23 @@ main {
   background-color: #fff;
   border-radius: 50%;
 }
+@font-face {
+  font-family: 'Palatino Linotype';
+  src: url("../fonts/PalatinoLinotype-Roman.eot");
+  src: local("☺"), url("../fonts/PalatinoLinotype-Roman.woff") format("woff"), url("../fonts/PalatinoLinotype-Roman.ttf") format("truetype"), url("../fonts/PalatinoLinotype-Roman.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Palatino Linotype';
+  src: url("../fonts/PalatinoLinotype-Bold.eot");
+  src: local("☺"), url("../fonts/PalatinoLinotype-Bold.woff") format("woff"), url("../fonts/PalatinoLinotype-Bold.ttf") format("truetype"), url("../fonts/PalatinoLinotype-Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
 .cards {
   position: relative;
   z-index: 2;
-  padding-top: 76px;
   padding-bottom: 76px;
 }
 .cards__content {
@@ -187,8 +202,49 @@ main {
   position: absolute;
   content: url('../img/cards-bg.png');
   left: 0px;
-  top: -60px;
+  top: 90px;
   z-index: -1;
+}
+.card__best {
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 100%;
+  border: 2px solid #EFCD62;
+  margin-bottom: 72px;
+}
+.card__best--margin {
+  margin-top: 50px;
+}
+.best__text {
+  margin: 0;
+  padding-left: 38px;
+  font-family: 'Palatino Linotype';
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  color: #FFFFFF;
+  text-align: left;
+}
+.best__img1 {
+  position: absolute;
+  right: 3%;
+  top: -130%;
+}
+.best__img2 {
+  position: absolute;
+  right: -2%;
+  top: -75%;
+}
+.best__img3 {
+  position: absolute;
+  right: 2%;
+  top: -136%;
+}
+.best__img4 {
+  position: absolute;
+  right: 3%;
+  top: -136%;
 }
 .card__wrapper {
   width: 100%;
