@@ -226,6 +226,27 @@ main {
   color: #FFFFFF;
   text-align: left;
 }
+@media (max-width: 1090px) {
+  .best__text {
+    display: none;
+  }
+}
+.best__text--mobile {
+  display: none;
+}
+@media (max-width: 1090px) {
+  .best__text--mobile {
+    display: block;
+    margin: 0;
+    padding-left: 38px;
+    font-family: 'Palatino Linotype';
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-align: left;
+  }
+}
 .best__img1 {
   position: absolute;
   right: 3%;
