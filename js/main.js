@@ -17,24 +17,6 @@ headerMobileBtn.addEventListener("click", function(){
 
 })
 
-
-
-// const ratingCard = document.querySelectorAll('.card__wrapper');
-// if(ratingCard) {
-//     for (let card of ratingCard) {
-//         const cardLearnMoreBtn = card.querySelector('.card__add-block');
-//         const learnMore = card.querySelector('.card__add-wrap');
-//         const learnMoreImg = card.querySelector('.card__arrow');
-//         const learnMoreText = card.querySelector('.card__add-block-btn');
-
-//         cardLearnMoreBtn.addEventListener('click', function(){
-//             learnMore.classList.toggle('hidden');
-//             learnMoreImg.classList.toggle('card__arrow-active');
-//             learnMoreText.innerHTML = (learnMoreText.innerHTML == 'Ocultar') ? 'Detallado' : 'Ocultar' ;
-//         })
-//     }
-// }
-
   
 var ratingCard = document.querySelectorAll(".card__wrapper");
 
@@ -42,7 +24,9 @@ ratingCard.forEach(function(item) {
     var addBtn = item.querySelector(".card__add-block");
     var textBtn = item.querySelector(".card__add-block-btn");
     var imgBtn = item.querySelector(".card__arrow");
+    var imgBtnWhite = item.querySelector(".card__arrow--white");
     var addContent = item.querySelector(".card__add-wrap");
+    var addBtnClose = item.querySelector(".add__arrow")
 
     addBtn.addEventListener("click", function(){
 
@@ -53,10 +37,13 @@ ratingCard.forEach(function(item) {
         }
 
         imgBtn.classList.toggle("card__arrow-active");
+        imgBtnWhite.classList.toggle("card__arrow-active")
         addContent.classList.toggle("hidden");
 
     });
+
+    addBtnClose.addEventListener("click", function(){
+        addContent.classList.add("hidden")
+    })
 })
-
-
 

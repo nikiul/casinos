@@ -20,16 +20,14 @@
     background-size: cover;
     width: 100%;
     height: 497px;
-    margin-bottom: 146px;
+    margin-bottom: 136px;
     
     @media (max-width: 1440px) {
-        // background-image: url('../img/banner-bg2.png');
         height: 403px;
-        margin-bottom: 93px;
+        margin-bottom: 97px;
     }
 
     @media (max-width: 1024px) {
-        // background-image: url('../img/banner-bg2.png');
         height: 300px;
         margin-bottom: 72px;
     }
@@ -39,7 +37,12 @@
         background-size: auto auto;
         background-position: top;
         height: 200px;
-        margin-bottom: 72px;
+        margin-bottom: 76px;
+    }
+
+    @media (max-width: 500px) {
+        margin-bottom: 52px;
+        height: 153px;
     }
 }
 
@@ -95,6 +98,10 @@
         position: relative;
         bottom: -95px;
     }
+
+    @media (max-width: 500px) {
+        bottom: -74px;
+    }
 }
 
 .banner__text {
@@ -106,6 +113,10 @@
 
     @media (max-width: 768px) {
         top: 12%;
+    }
+
+    @media (max-width: 768px) {
+        top: 7%;
     }
 }
 
@@ -131,6 +142,11 @@
     @media (max-width: 768px) {
         font-size: 45px;
         line-height: 45px;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 30px;
+        line-height: 40px;
     }
 }
 
@@ -167,17 +183,33 @@
             font-size: 60px;
             line-height: 60px;
         }
+
+        @media (max-width: 500px) {
+            margin: 0;
+            font-size: 42px;
+            line-height: 57px;
+        }
     }
 }
 
 .banner__tablet-subtitle {
-    margin: 0;
-    font-family: 'Palatino Linotype';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18.5px;
-    line-height: 25px;
-    color: #FFFFFF;
+    display: none;
+
+    @media (max-width: 768px) {
+        display: block;
+        margin: 0;
+        font-family: 'Palatino Linotype';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18.5px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    
+    @media (max-width: 500px) {
+        font-size: 13px;
+        line-height: 18px;
+    }
 }
 
 .banner__ellipse {
@@ -220,6 +252,13 @@
         outline: none;
         background-color: inherit;
     }
+
+    @media (max-width: 500px) {
+        width: 24.26px;
+        height: 18.35px;
+        top: 17px;
+        right: 14px;
+    }
 }
 
 .menu-icon-wrapper {
@@ -232,6 +271,11 @@
         justify-content: center;
         align-items: center;
     }
+
+    @media (max-width: 500px) {
+        width: 24.26px;
+        height: 18.35px;
+    }
 }
     
 .menu-icon {
@@ -240,6 +284,11 @@
     height: 4px;
     background-color: #fff;
     transition: background-color 0.2s ease-in 0.2s;
+
+    @media (max-width: 500px) {
+        width: 24.26px;
+        height: 2.35px;
+    }
 }
     
 .menu-icon::before {
@@ -252,6 +301,10 @@
     background-color: #fff;
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 
+    @media (max-width: 500px) {
+        width: 24.26px;
+        height: 2.35px;
+    }
 }
     
 .menu-icon::after {
@@ -263,6 +316,11 @@
     height: 4px;
     background-color: #fff;
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+    @media (max-width: 500px) {
+        width: 24.26px;
+        height: 2.35px;
+    }
 }
     
 .menu-icon.menu-icon-active {
