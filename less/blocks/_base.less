@@ -9,6 +9,11 @@ body {
     font-weight: normal;
 }
 
+.body__lock {
+    height: 100%;
+    overflow: hidden;
+}
+
 main {
     background-color: #06412C;
 }
@@ -19,4 +24,14 @@ main {
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+
+    @media (max-width: 1440px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media (max-width: 1024px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 }
