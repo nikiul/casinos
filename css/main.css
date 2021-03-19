@@ -174,43 +174,53 @@ main {
   }
 }
 .header__menu-closet {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  outline: none;
-  width: 50px;
-  height: 25px;
+  display: none;
+}
+@media (max-width: 768px) {
+  .header__menu-closet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 25px;
+  }
 }
 .header__menu-icon {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 33px;
-  height: 2px;
-  background-color: #fff;
+  display: none;
 }
-.header__menu-icon::before {
-  position: absolute;
-  content: "";
-  background-color: #fff;
-  width: 20px;
-  height: 2px;
-  top: 5px;
+@media (max-width: 768px) {
+  .header__menu-icon {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 33px;
+    height: 2px;
+    background-color: #fff;
+  }
+  .header__menu-icon::before {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 20px;
+    height: 2px;
+    top: 5px;
+  }
 }
 @font-face {
   font-family: 'Palatino Linotype';
